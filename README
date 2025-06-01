@@ -1,0 +1,13 @@
+Input image (MAKE SURE IS JPEG OR PNG OR SOMETHING NOT HEIC) into image input folder
+
+Make sure OpenCV is installed
+    google it online or if you are on mac, run "pip install opencv-python opencv-python-headless"
+    pip install imutils
+    pip install scipy
+    pip install scikit-image
+
+if you have problems installing in the vs code terminal, try using your computer's base terminal
+    make sure both libraries, the one installed and the one needed are in the same place. press ctrl shift q to change enviornments if needed.
+
+The most recently added will be the one used.
+run the code :fire: and follow the directions
