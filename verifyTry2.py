@@ -4,10 +4,12 @@ import numpy as np
 from imageTransform import transformImage
 from imageInput import partQuery
 from imageInput import mostRecentImage
+from imageAlign import alignImage
 
-
-input = cv2.imread(mostRecentImage())
-refrence = cv2.imread(partQuery())
+#input = cv2.imread(mostRecentImage())
+#refrence = cv2.imread(partQuery())
+input = cv2.imread("./image_input/inputDifference.jpg")
+refrence = cv2.imread("./refrence_image/testDifference.jpg")
 
 inputTransform = transformImage(input)
 refrenceTransform = transformImage(refrence)
@@ -20,6 +22,11 @@ cv2.imshow("bob2", refrenceTransform)
 
 gray1 = cv2.cvtColor(inputTransform, cv2.COLOR_BGR2GRAY)
 gray2 = cv2.cvtColor(refrenceTransform, cv2.COLOR_BGR2GRAY)
+
+gray2 = alignImage(gray1, gray2)
+
+cv2.imshow("testalign1", gray1)
+cv2.imshow("testalign2", gray2)
 
 diff = cv2.absdiff(gray1, gray2)
 

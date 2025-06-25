@@ -5,6 +5,7 @@ Make sure OpenCV is installed
     pip install imutils
     pip install scipy
     pip install scikit-image
+    conda install -c conda-forge imutils
 
 if you have problems installing in the vs code terminal, try using your computer's base terminal
     make sure both libraries, the one installed and the one needed are in the same place. press ctrl shift q to change enviornments if needed.

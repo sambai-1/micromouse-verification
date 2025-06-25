@@ -2,7 +2,6 @@ import numpy as np
 import cv2
 import imutils
 from imutils.perspective import four_point_transform
-from skimage.filters import threshold_local
 
 def transformImage(image):
     #image = cv2.imread(imagePath)
